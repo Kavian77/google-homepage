@@ -11,11 +11,21 @@
     </head>
 
     <body>
-        <div class="grid-1">
+        <div class="grid-main">
+            <header class="nav">
+                <ul>
+                    <li class="nav-left" id="about"><a href="https://about.google.com/">About</a></li>
+                    <li class="nav-left" id="store"><a href="https://store.google.com/">Store</a></li>
+                    <li class="nav-right" id="Gmail"><a href="https://mail.google.com/">Gmail</a></li>
+                    <li class="nav-right" id="images"><a href="https://images.google.com/">Images</a></li>
+                    <li class="nav-right" id="nine-squares"><img src="images/nine-squares.png" alt="Nine squares icon arranged in a 3 by 3 grid" title="Nine Squares Icon"></li>
+                    <li class="nav-right" id="user-icon"><img src="images/user-icon.jpg" alt="Google account photo, or letter of first name on colour circle background" title="User Icon"></li>
+                </ul>
+            </header>
             <div class="logo">
                 <img src="images/dr-herbert.png" alt="Celebrating Dr. Herbert Kleber" title="Celebrating Dr. Herbert Kleber">
             </div>
-            <div class="search grid-2">
+            <form class="search grid-search" action="/search" method="GET">
                 <div class="magnifine">
                     <span class="magnifine">
                         <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -25,19 +35,28 @@
                     </span>
                 </div>
                 <div class="search-box">
-                    <form action="/search" method="GET">
-                        <input name="q" type="text" maxlength="2048">
-                    </form>
+                    <input name="q" type="text" maxlength="2048">
                 </div>
+                <div class="search-button">
+                    <input type="submit" value="Google Search" name="google-search">
+                </div>
+                <div class="lucky-button">
+                   <input type="submit" value="I'm Feeling Lucky" name="feeling-lucky">
+                </div>
+            </form>
+            <div class="footer-upper">
+                <p id="country">United Kingdom</p>
             </div>
-            <div class="nav grid-3">
-                <p id="about"><a href="https://about.google.com/">About</a></p>
-                <p id="store"><a href="https://store.google.com/">Store</a></p>
-                <p id="Gmail"><a href="https://mail.google.com/">Gmail</a></p>
-                <p id="images"><a href="https://images.google.com/">Images</a></p>
-                <p id="squares"><img id="nine-squares" src="images/nine-squares.png" alt="Nine squares icon arranged in a 3 by 3 grid" title="Nine Squares Icon"></p>                     
-                <p id="icon"><img id="user-icon" src="images/user-icon.jpg" alt="Google account photo, or letter of first name on colour circle background" title="User Icon"></p>
-            </div>
+            <footer class="footer-lower">
+                <ul>    
+                    <li id="advertising"><a href="https://ads.google.com/">Advertising</a></li>
+                    <li id="business"><a href="https://www.google.com/services/">Business</a></li>
+                    <li id="howsearch"><a href="https://www.google.com/search/howsearchworks/">How Search Works</a></li>
+                    <li id="privacy"><a href="https://policies.google.com/privacy/">Privacy</a></li>
+                    <li id="terms"><a href="https://policies.google.com/terms/">Terms</a></li>
+                    <li id="settings"><a href="https://www.google.com/preferences/">Settings</a></li>
+                </ul>
+            </footer>
         </div>
     </body>
 </html>
