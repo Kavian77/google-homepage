@@ -55,12 +55,14 @@ header li {
 #nine-squares img {
     height: 16px;
     width: 16px;
+    vertical-align: middle;
 }
 
 #user-icon img {
     height: 32px;
     width: 32px;
     border-radius: 50%;
+    vertical-align: middle;
 }
 
 /* LOGO */
